@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equation to Graph Calculator</title>
+    <title>Quadratic Graph Calculator</title>
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <div class="container">
-        <h1>Quadratic Graph Calculator</h1>
-        <p>Enter coefficients for y = ax² + bx + c</p>
+        <h1>Quadratic Graph</h1>
+        <p>y = ax² + bx + c</p>
 
         <form id="equationForm">
-            <div class="input-group">
-                <label for="a">a:</label>
-                <input type="number" id="a" value="1" step="any" required>
-            </div>
-            <div class="input-group">
-                <label for="b">b:</label>
-                <input type="number" id="b" value="0" step="any" required>
-            </div>
-            <div class="input-group">
-                <label for="c">c:</label>
-                <input type="number" id="c" value="0" step="any" required>
-            </div>
-            <button type="submit">Plot Graph</button>
+            <input type="number" id="a" value="1" step="any" placeholder="a" required>
+            <input type="number" id="b" value="0" step="any" placeholder="b" required>
+            <input type="number" id="c" value="0" step="any" placeholder="c" required>
+            <button type="submit">Plot</button>
         </form>
 
-        <div id="info" class="info"></div>
-
-        <canvas id="graphCanvas" width="600" height="500"></canvas>
+        <div id="info"></div>
+        <canvas id="graphCanvas"></canvas>
     </div>
 
     <script src="script2.js"></script>
